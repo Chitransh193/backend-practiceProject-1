@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(148, 38%, 91%);
+  display: grid;
+  place-items: center;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.main .holder {
+  max-width: 1440px;
+  background-color: hsl(0, 0%, 100%);
+  display: inline-block;
+  border: 1px solid hsl(187, 24%, 22%);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.main .holder h3 {
+  color: hsl(169, 82%, 27%);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.main .holder .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .holder .form input {
+  padding: 10px 10px 10px 15px;
+  border: 1px solid hsl(187, 24%, 22%);
+  border-radius: 8px;
+  outline: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+}
+
+.main .holder .form .error-empty {
+  display: none;
+  color: hsl(0, 66%, 54%);
+  font-size: 8px;
+}
+
+.main .description {
+  height: 100px;
+  padding: 10px 10px 10px 15px;
+  border: 1px solid hsl(187, 24%, 22%);
+  border-radius: 8px;
+  outline: none;
+  font-size: 11px;
+}
+
+.main .holder .form button {
+  width: 80px;
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 6px;
+  border: 1px solid hsl(187, 24%, 22%);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.main .holder .card-holder {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main .holder .card-holder .card .view-data {
+  color: hsl(169, 82%, 27%);
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.main .holder .card-holder .card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 5px 20px 20px 20px;
+  border-radius: 8px;
+  border: 1px solid hsl(187, 24%, 22%);
+}
+
+.main .holder .card-holder .card .modding-menu {
+  text-decoration: none;
+  text-align: right;
+  /*display: flex;*/
+  /*justify-content: flex-end;*/
+  gap: 10px;
+}
+
+.main .holder .card-holder .card #delete-task i {
+  font-size: 8px;
+  color: #999;
+  margin-left: 3px;
+}
+
+.main .holder .card-holder .card #rename-task i {
+  font-size: 8px;
+  color: #999;
+}
+
+.main .holder .card-holder .card #delete-task i:hover{
+  color: red;
+}
